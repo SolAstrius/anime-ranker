@@ -6,7 +6,7 @@ Anime Ranker is a local React application for ranking anime from MyAnimeList (MA
 
 ## Tech Stack
 
-- **Runtime**: Bun
+- **Runtime**: Deno 2 with npm compatibility
 - **Framework**: React 18 with TypeScript
 - **Build Tool**: Vite 5
 - **Styling**: Plain CSS (`src/styles.css`)
@@ -14,10 +14,10 @@ Anime Ranker is a local React application for ranking anime from MyAnimeList (MA
 ## Commands
 
 ```bash
-bun install      # Install dependencies
-bun run dev      # Start dev server on port 5173
-bun run build    # Production build
-bun run preview  # Preview production build
+deno task install  # Install dependencies
+deno task dev --host 127.0.0.1 --port 5173  # Start dev server
+deno task build    # Production build
+deno task preview  # Preview production build
 ```
 
 ## Project Structure

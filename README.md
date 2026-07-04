@@ -1,4 +1,4 @@
-# Anime Ranker (React + Bun)
+# Anime Ranker (React + Deno)
 
 Local React UI to rank anime from MAL exports with fast hotkeys and Elo math.
 
@@ -13,8 +13,8 @@ Local React UI to rank anime from MAL exports with fast hotkeys and Elo math.
 ## Run
 
 ```bash
-bun install
-bun run dev
+deno task install
+deno task dev --host 127.0.0.1 --port 5173
 ```
 
 ## Notes

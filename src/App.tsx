@@ -859,7 +859,8 @@ const App = () => {
     if (!eloState) {
       return [];
     }
-    const statusTier = appliedAssumeDroppedLower ? { Dropped: -1 } : undefined;
+    const statusTier: Record<string, number> | undefined =
+      appliedAssumeDroppedLower ? { Dropped: -1 } : undefined;
     const rows = Array.from(eloState.ratings.entries()).sort((left, right) => {
       const [leftId, leftRating] = left;
       const [rightId, rightRating] = right;
